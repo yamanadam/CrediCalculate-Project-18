@@ -12,7 +12,52 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="container-fluid">
+    <h1 class="text-warning mt-5 ms-5">Credi Calculation Tool</h1>
+    <form class="row ms-5 align-items-center">
+      <div class="col-12 form">
+        <p>Credi:</p>
+        <select name="credi" id="credi">
+          <option value="select" disabled selected>Select</option>
+          <option value="housingLoan">Housing Loan</option>
+          <option value="consumerLoans">Consumer Loan</option>
+          <option value="carLoan">CarLoan</option>
+        </select>
+        <br /><br />
+        <p>Term:</p>
+        <input type="number" name="term" id="term" />
+        <br /><br />
+        <p>Amount:</p>
+        <input type="number" name="amount" id="amount" />
+        <br><br>
+        <button class="btn btn-dark">Calculate</button>
+      </div>
+    </form>
+    <div class="result">
+      <h1 class="text-warning mt-5 ms-5">Credi Information</h1>
+      <table class=" tableInfo ms-5 ">
+        <tr>
+          <td class="fw-bold">Credi Amount</td>
+          <td id="crediAmount" class="crediAmount">200</td>
+          <td class="fw-bold">Type of Credit</td>
+          <td id="typeCredi">Car Loan</td>
+        </tr>
+          <tr>
+          <td class="fw-bold">Term</td>
+          <td class="term" >12</td>
+          <td class="fw-bold">Interest Rate</td>
+          <td class="rate">1.15</td>
+        </tr>
+        <tr>
+          <td class="fw-bold">Total Amount</td>
+          <td class="total">12</td>
+          <td class="fw-bold">Installment Amount</td>
+          <td class="installment">1.15</td>
+        </tr>
+      
+      </table>
+    </div>
+  </body>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.form select {
+  width: 90%;
+}
+
+#term,
+#amount,
+.btn {
+  width: 90%;
+}
+
+table,
+td {
+  border: 1px solid rgba(255, 166, 0, 0.793);
+}
+
+table {
+  width: 87%;
+  text-align: center;
+}
+
+/* .result {
+  display: none;
+} */
