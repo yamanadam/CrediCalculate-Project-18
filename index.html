@@ -14,45 +14,46 @@
   </head>
   <body class="container-fluid">
     <h1 class="text-warning mt-5 ms-5">Credi Calculation Tool</h1>
-    <form class="row ms-5 align-items-center">
-      <div class="col-12 form">
+    <form class="row ms-5 align-items-center ">
+      <div class="col-12 form ">
         <p>Credi:</p>
-        <select name="credi" id="credi">
+        <select name="credi" id="credi" class="p-1">
           <option value="select" disabled selected>Select</option>
-          <option value="housingLoan">Housing Loan</option>
-          <option value="consumerLoans">Consumer Loan</option>
-          <option value="carLoan">CarLoan</option>
+          <option value="Housing Loan">Housing Loan</option>
+          <option value="Consumer Loan">Consumer Loan</option>
+          <option value="Car Loan">CarLoan</option>
         </select>
         <br /><br />
         <p>Term:</p>
-        <input type="number" name="term" id="term" />
+        <input class="p-1" type="number" name="term" id="term"   />
         <br /><br />
         <p>Amount:</p>
-        <input type="number" name="amount" id="amount" />
+        <input class="p-1"  type="number" name="amount" id="amount" />
         <br><br>
-        <button class="btn btn-dark">Calculate</button>
+        <button class="btn btn-dark calculate">Calculate</button>
       </div>
     </form>
-    <div class="result">
-      <h1 class="text-warning mt-5 ms-5">Credi Information</h1>
+   
+    <div class="result" id="div-res">
+    <h1 class="text-warning mt-5 ms-5">Credi Information</h1>
       <table class=" tableInfo ms-5 ">
         <tr>
           <td class="fw-bold">Credi Amount</td>
-          <td id="crediAmount" class="crediAmount">200</td>
+          <td id="crediAmount" class="crediAmount">0</td>
           <td class="fw-bold">Type of Credit</td>
-          <td id="typeCredi">Car Loan</td>
+          <td id="typeCredi">Select</td>
         </tr>
           <tr>
           <td class="fw-bold">Term</td>
-          <td class="term" >12</td>
+          <td class="term" >0</td>
           <td class="fw-bold">Interest Rate</td>
-          <td class="rate">1.15</td>
+          <td class="rate">0</td>
         </tr>
         <tr>
           <td class="fw-bold">Total Amount</td>
-          <td class="total">12</td>
+          <td class="total">0</td>
           <td class="fw-bold">Installment Amount</td>
-          <td class="installment">1.15</td>
+          <td class="installment">0</td>
         </tr>
       
       </table>
